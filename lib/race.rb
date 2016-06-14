@@ -1,11 +1,11 @@
 require_relative 'car'
 
 class Race
-  
+
   def initialize
-    # initialize two new cars
+    # initialize two new cars (which are instance variables)
     @cars = [Car.new, Car.new]
-    # generate random speeds for each car
+    # generate random speeds for each car (speed is an attribute)
     random = Random.new
     @cars[0].accelerate(random.rand(100))
     @cars[1].accelerate(random.rand(100))
